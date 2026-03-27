@@ -21,7 +21,7 @@ Connect your components to the SPIKE Prime Hub as follows:
 
 To make the robot work with the provided code, configure your camera in the **SenrayVar App**:
 
-1.  **Mode:** Select `Codel config -> Color Detect`.
+1.  **Mode Config:** Select `Model config -> Color Detect`.
 2.  **orange:** Train for **Orange Ball**.
 
 <p align="center">
