@@ -37,7 +37,7 @@ The **SenrayVar AI Camera** communicates with the SPIKE Prime Hub by emulating a
 
 ### 🔢 Data Protocol & Range:
 * **Protocol Limit:** The transmission uses a 16-bit signed integer, meaning the maximum positive value is **32,767**.
-* **Unit Setting (Crucial):** * If the camera is set to **cm**[default], the Hub effectively sees a max range of **3,276.7** (due to the 0.1cm resolution).
+* **Unit Setting (Crucial):** * If the camera is set to **cm**[default], the Hub effectively sees a max range of **3,276**.
     * By setting the camera unit to **mm**, you can transmit the full integer range up to **32,767** directly to the SPIKE Hub.
 * **Data Size:** Limited to **2 bytes** per transmission packet.
 
