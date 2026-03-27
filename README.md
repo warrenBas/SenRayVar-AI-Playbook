@@ -4,6 +4,8 @@ Welcome to the official examples repository for the **SenrayVar AI Camera**. Thi
 
 Whether you are a LEGO® education enthusiast or a professional maker using Arduino/Python, you will find the resources you need here.
 
+🌐 **More Resources:** You can also find additional tutorials and documentation on our [Official Documentation Portal](https://robot-code.com/docs/en/).
+
 ---
 
 ## 📂 Repository Structure
@@ -40,7 +42,7 @@ SenrayVar is a versatile AI vision sensor designed for education and prototyping
 
 ## 🛒 Where to Buy
 
-* 🛍️ **Official Store:** [https://robot-code.com/products/aivision-pro](#)
+* 🛍️ **Official Store:** [Click here to buy SenrayVar AI Camera](https://robot-code.com/products/aivision-pro)
 ---
 
 ## 📺 Video Tutorials & Demos
