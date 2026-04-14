@@ -35,21 +35,31 @@ To maximize data density, you can package multiple data points (such as Object I
 
 
 ## 📝 Camera APP Configuration:
-**1. Camera Model Configuration:**  
-  a.  **Mode Config:** Select `Model config -> Voice -> Record`.  
-  b.  **up:** Train for **up**, you can modify the name.  
-  b.  **down:** Train for **down**, you can modify the name.  
+The voice recognition function supports two modes: **Custom Mode** and **Automatic Mode**.
 
+### A. Custom Mode (User-Defined)
+Users can record and train specific voice commands according to their needs.
+* **Steps:** Select `Model config -> Voice -> Record`.
+* **Training:** * **left:** Train for the "left" command; the name can be customized.
+    * **right:** Train for the "right" command; the name can be customized.
 <p align="center">
   <img src="../../assets/lego_spike_prome_examples/speech_recognition_demo1.png" width="90%" />
 </p>
-<p align="center"><em>Figure 1: Camera App voice training settings.</em></p>
+<p align="center"><em>Figure 1: Camera App voice training and mode settings.</em></p>
 
-**2. Camera Code:**  
+### B. Automatic Mode (Built-in Commands) - Recommended
+No manual training is required. This mode uses the camera's built-in high-accuracy speech model.
+* **No Configuration Needed:** Simply switch to the automatic voice mode to start using it.
+* **Supported Commands:** Currently supports 6 standard command words: `left`, `right`, `up`, `down`, `stop`, and `go`.
+* **Scalability:** More command word models will be released in the Model Market in the future.
+
+## **Camera Code(Custom Mode):**  
 ![Camera Logic Setup](../../assets/lego_spike_prome_examples/speech_recognition_demo2.png)
 <p align="center"><em>Figure 2: Internal scratch code in the SenrayVar Web/App.</em></p>
 
-**Selecting `Line Track` model frees up CPU for the speech module. Adding a `sleep 50 ms` function lowers the FPS, further reducing CPU usage for speech processing.**
+## **Camera Code(Auto Mode):**  
+![Camera Logic Setup](../../assets/lego_spike_prome_examples/speech_recognition_demo21.png)
+<p align="center"><em>Figure 3: Internal scratch code in the SenrayVar Web/App.</em></p>
 
     On the LEGO side, 
     if the face NAME_1 is detected, a value of 10 is received; 
@@ -80,8 +90,8 @@ while True:
 
 ```
 ![Camera Logic Setup](../../assets/lego_spike_prome_examples/speech_recognition_demo3.png)
-<p align="center"><em>Figure 3: Running Log</em></p>
+<p align="center"><em>Figure 4: Running Log</em></p>
 
 ### scratch
 ![Scratch Code](../../assets/lego_spike_prome_examples/speech_recognition_demo4.png)
-<p align="center"><em>Figure 4: Scratch Code And Log</em></p>
+<p align="center"><em>Figure 5: Scratch Code And Log</em></p>
